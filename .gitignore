@@ -1,5 +1,7 @@
 venv
 package-lock.json
+__pycache__
+*.pyc
 
 # Logs
 logs
