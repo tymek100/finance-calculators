@@ -11,7 +11,7 @@ const Home = () => {
 
   const calculatePayments = async () => {
     try {
-      const response = await axios.post("http://127.0.0.1:8000/remaining-payments", {
+      const response = await axios.post("http://0.0.0.0:8000/remaining-payments", {
         capital_remaining: parseFloat(capital),
         apr: parseFloat(apr),
         monthly_payment: parseFloat(monthlyPayment),
