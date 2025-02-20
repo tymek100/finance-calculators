@@ -8,4 +8,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  server: {
+    host: '0.0.0.0', // Replace with your custom IP (e.g., '192.168.1.100')
+  },
 })
