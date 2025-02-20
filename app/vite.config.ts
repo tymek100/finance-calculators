@@ -9,6 +9,7 @@ export default defineConfig({
     tailwindcss(),
   ],
   server: {
-    host: '0.0.0.0', // Replace with your custom IP (e.g., '192.168.1.100')
+    host: '0.0.0.0', // Replace with your custom IP if needed (e.g., '192.168.1.100')
+    allowedHosts: ['finance-calculators.onrender.com'], // Add the allowed host here
   },
 })
