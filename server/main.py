@@ -9,8 +9,8 @@ class SimulationInput(BaseModel):
     apr: float
     monthly_payment: float
 
-@app.post("/simulate")
-def simulate(data: SimulationInput):
+@app.get("/remaining-payments")
+def remaining_payments(data: SimulationInput):
     """
     Calculate the remaining payments using:
     
