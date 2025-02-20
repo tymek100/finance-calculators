@@ -28,8 +28,8 @@ def remaining_payments(data: SimulationInput):
     monthly_rate = apr / 12
     remaining_payments = nper(monthly_rate, monthly_payment, capital_remaining)
     """
-    monthly_rate = data.apr / 12
-    result = nper(monthly_rate, data.monthly_payment, data.capital_remaining)
+    monthly_rate = data.apr / 100 / 12
+    result = nper(monthly_rate, -data.monthly_payment, data.capital_remaining)
     return { "remaining_payments": round(abs(result.item()), 2) }
 
 if __name__ == "__main__":
